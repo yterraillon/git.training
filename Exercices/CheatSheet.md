@@ -29,7 +29,7 @@ Git config:
 
 ## Branch Management
 
-- créer une branche BRANCNNAME: `git branch BRANCHNAME`
+- créer une branche BRANCHNAME: `git branch BRANCHNAME`
 - changer la branche de travail pour que ça soit BRANCHNAME: `git checkout BRANCHNAME` ou avec un alias: `git co BRANCHNAME`
 - créer une branche BRANCNNAME et y accéder de suite: `git checkout -b BRANCHNAME` ou avec un alias : `git co -b BRANCHNAME`
 - récupérer les branches de l'origin: `git fetch`
@@ -37,7 +37,7 @@ Git config:
 - lister les branches distantes (sur origin): `git branch -r`
 - lister toutes les branches: `git branch -a`
 - effacer une branche: `git branch -D BRANCHNAME`
-- revenir à la branche précédente: `git checkout - ` ou avec un alias: `git co `
+- revenir à la branche précédente: `git checkout - ` ou avec un alias: `git co -`
 
 
 ## Working

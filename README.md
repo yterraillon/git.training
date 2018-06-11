@@ -9,10 +9,10 @@ Avant de démarrer, assurez-vous d'avoir les [prérequis](Exercices/GetReadyForThe
 Cela fera l'objet d'un complément ultérieur. 
 
 Les sujets : 
-1. Configuration de git 
+1. [Configuration de git](Exercices/Configuration.md)
 2. Un peu de vocabulaire
-3. Récupération du projet
-4. Navigation entre les branches. 
+3. [Récupération du projet](Exercices/CloneProject.md)
+4. [Navigation entre les branches](Exercices/Branches.md) 
 5. Travailler avec git 
 6. Cherry-pick
 7. Stash 

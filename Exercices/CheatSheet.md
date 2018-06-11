@@ -31,7 +31,7 @@ Git config:
 
 - créer une branche BRANCHNAME: `git branch BRANCHNAME`
 - changer la branche de travail pour que ça soit BRANCHNAME: `git checkout BRANCHNAME` ou avec un alias: `git co BRANCHNAME`
-- créer une branche BRANCNNAME et y accéder de suite: `git checkout -b BRANCHNAME` ou avec un alias : `git co -b BRANCHNAME`
+- créer une branche BRANCHNAME et y accéder de suite: `git checkout -b BRANCHNAME` ou avec un alias : `git co -b BRANCHNAME`
 - récupérer les branches de l'origin: `git fetch`
 - lister les branches locales: `git branch`
 - lister les branches distantes (sur origin): `git branch -r`
@@ -65,8 +65,8 @@ Git config:
 
 ## Done
 
-- merger la brancn BRANCHNAME dans la branche actuelle : `git merge BRANCHNAME`
-- merger la brancn BRANCHNAME dans la branche actuelle et forcer la création du commit de merge `git merge --no-ff BRANCHNAME`
+- merger la branch BRANCHNAME dans la branche actuelle : `git merge BRANCHNAME`
+- merger la branch BRANCHNAME dans la branche actuelle et forcer la création du commit de merge `git merge --no-ff BRANCHNAME`
 
 - remplacer l'historique des commits de la branche par ceux de la branche BRANCHNAME : `git rebase BRANCHNAME`
 - remplacer l'historique des commits de la branche par ceux de la branche BRANCHNAME de façon interactive : `git rebase -i BRANCHNAME`

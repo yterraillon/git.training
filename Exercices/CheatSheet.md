@@ -30,7 +30,7 @@ Git config:
 ## Branch Management
 
 - créer une branche BRANCNNAME: `git branch BRANCHNAME`
-- changer la branche de travail pour que ça soit BRANCNNAME: **git checkout BRANCNNAME** ou avec un alias: `git co BRANCHNAME`
+- changer la branche de travail pour que ça soit BRANCHNAME: `git checkout BRANCHNAME` ou avec un alias: `git co BRANCHNAME`
 - créer une branche BRANCNNAME et y accéder de suite: `git checkout -b BRANCHNAME` ou avec un alias : `git co -b BRANCHNAME`
 - récupérer les branches de l'origin: `git fetch`
 - lister les branches locales: `git branch`
@@ -48,7 +48,7 @@ Git config:
 - commiter un fichiers modifié : `git commit FILENAME`
 - commiter tous les fichiers modifiés et spécifier un message de commit COMMITMESSAGE `git commit -am "COMMITMESSAGE"`
 - afficher l'historique des commits locaux : `git log`
-- afficher le dernier commit (alias) : git last
+- afficher le dernier commit (alias) : `git last`
 - envoyer les changements à l'origin : `git push`
 - récupérer les derniers changements de l'origin `git pull`
  

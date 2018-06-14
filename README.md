@@ -13,12 +13,12 @@ Les sujets :
 2. Un peu de vocabulaire
 3. [Récupération du projet](Exercices/CloneProject.md)
 4. [Navigation entre les branches](Exercices/Branches.md) 
-5. Travailler avec git 
-6. Cherry-pick
-7. Stash 
-8. Merge
-9. Rebase
-10. Merge ou rebase? 
+5. [Travailler avec git](Exercices/WorkingWithGit.md) 
+6. [Cherry-pick](Exercices/CherryPick.md) 
+7. [Stash](Exercices/Stash.md) 
+8. [Merge](Exercices/merge.md) 
+9. [Rebase](Exercices/Rebase.md) 
+10. [Merge ou rebase?](Exercices/MergeOrRebase.md) 
 11. Something Went Wrong
 
 

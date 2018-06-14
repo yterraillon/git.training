@@ -63,7 +63,7 @@ Git config:
 - supprimer le dernier stash `git stash drop`
 
 
-## Done
+## Merge and Rebase
 
 - merger la branch BRANCHNAME dans la branche actuelle : `git merge BRANCHNAME`
 - merger la branch BRANCHNAME dans la branche actuelle et forcer la création du commit de merge `git merge --no-ff BRANCHNAME`

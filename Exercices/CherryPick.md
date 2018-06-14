@@ -16,7 +16,7 @@ A l'aide d'un éditeur de fichier, insérer dans Config.cs :
 
 Commiter ce changement avec le message "Modif Config.cs". 
 
-A présent modifier le contenu du fichier Settings.cs et y insérer 
+A présent modifier le contenu du fichier Settings.cs et y insérer en haut du fichier
 `/// settings 1`
 
 Commiter ce changement avec le message "Modif Settings.cs". 
@@ -44,9 +44,55 @@ Regarder à nouveau l'historique du master.
 
 Depuis master créer et atteindre une branche 'cherry-pick-issue'
 
-Modifier le contenu du fichier Settings.cs et y insérer 
+Modifier le contenu du fichier Settings.cs et y insérer en haut du fichier
 `/// settings 2`
 
 Commiter ce changement avec le message "Modif Settings.cs for conflict". 
 
 Cherry-picker le commit "Modif Settings.cs" depuis la branche 'cherry-pick-me'
+
+Un message similaire ç celui-ci apparait : 
+
+`$ git cherry-pick 33db9aed04b88e26f464ad06e47ef97d495f1964
+error: could not apply 33db9ae... temp
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'`
+
+Les modifications sont en conflit, car le même fichier est modifié par 2 commits incompatibles. Afficher le statut nous donne plus d'informations : 
+
+`On branch cherry-pick-issue
+You are currently cherry-picking commit 33db9ae.
+  (fix conflicts and run "git cherry-pick --continue")
+  (use "git cherry-pick --abort" to cancel the cherry-pick operation)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+        both modified:   Training.Git/Settings.cs
+
+no changes added to commit (use "git add" and/or "git commit -a")`
+
+Pour résoudre le conflit, plusieurs façons sont possibles. Nous le ferons à la main dans le cadre de cet exercice. 
+
+Ouvrir le fichier Settings.cs. Les lignes conflictuelles sont marquées par des chevrons : <<<<<<< et >>>>>>>>
+
+`<<<<<<< HEAD
+/// settings 2
+=======
+/// settings 1
+>>>>>>> 33db9ae... cherry-pick-me`
+
+Dans le cadre de cet exercice nous allons conserver les 2 modifications. Editer le fichier pour supprimer les lignes suivantes : 
+`<<<<<<< HEAD`
+`=======`
+`>>>>>>> 33db9ae... cherry-pick-me`
+
+Dans git bash marquer le conflit comme résolu en faisant un `git add Training.Git/Settings.cs` ou un `git add`. __Attention__ le git add . va marquer tous les fichiers comme résolus. 
+Il faut donc s'assurer que les conflits sont effectivement bien résolus avant. 
+
+Une fois les conflits marqués comme résolus, on va continuer le cherry-pick (qui s'était mis en pause pour la résolution du conflit.)
+
+`git cherry-pick --continue`
+
+A noter que l'on peut aussi arrêter l'opération et revenir à l'état d'avant d'avoir démarré le cherry-pick en faisant un `git cherry-pick --abort`

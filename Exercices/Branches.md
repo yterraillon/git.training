@@ -21,7 +21,7 @@ L'upstream est alors créé.
 
 Retourner sur master. On va effacer la branche 'another-branch-from-master'. 
 
-Avec la commande `git branch -D another-branch-from-master`, on effacae la branche localement.
+Avec la commande `git branch -D another-branch-from-master`, on efface la branche localement.
 Avec la commande `git push origin --delete another-branch-from-master` on efface la branche distante. 
 
 Lister à nouveau les branches locales et distantes.

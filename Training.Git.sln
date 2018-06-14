@@ -3,7 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Training.Git", "Training.Git\Training.Git.csproj", "{EE2817A7-3537-4D01-97B3-D17528784D98}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Training.Git", "Training.Git\Training.Git.csproj", "{EE2817A7-3537-4D01-97B3-D17528784D98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9B2D5BB2-ADB3-47DC-B29A-86C4F58AC1E6}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercices", "Exercices", "{32C2648F-E8F6-49C3-A148-D29E4A18970B}"
+	ProjectSection(SolutionItems) = preProject
+		Exercices\Branches.md = Exercices\Branches.md
+		Exercices\CheatSheet.md = Exercices\CheatSheet.md
+		Exercices\CherryPick.md = Exercices\CherryPick.md
+		Exercices\CloneProject.md = Exercices\CloneProject.md
+		Exercices\Configuration.md = Exercices\Configuration.md
+		Exercices\GetReadyForTheTraining.md = Exercices\GetReadyForTheTraining.md
+		Exercices\WorkingWithGit.md = Exercices\WorkingWithGit.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

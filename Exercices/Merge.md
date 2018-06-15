@@ -4,7 +4,7 @@
 
 ## Définition 
 
-Une merge fusionne deux historiques ensemble. 
+Un merge fusionne deux historiques ensemble. 
 
 ## Avant de démarrer 
 

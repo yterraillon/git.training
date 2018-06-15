@@ -18,7 +18,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Exercices", "Exercices", "{
 		Exercices\CherryPick.md = Exercices\CherryPick.md
 		Exercices\CloneProject.md = Exercices\CloneProject.md
 		Exercices\Configuration.md = Exercices\Configuration.md
+		Exercices\Fixes.md = Exercices\Fixes.md
 		Exercices\GetReadyForTheTraining.md = Exercices\GetReadyForTheTraining.md
+		Exercices\GoodPractices.md = Exercices\GoodPractices.md
+		Exercices\Merge.md = Exercices\Merge.md
+		Exercices\MergeOrRebase.md = Exercices\MergeOrRebase.md
+		Exercices\Rebase.md = Exercices\Rebase.md
+		Exercices\Stash.md = Exercices\Stash.md
 		Exercices\WorkingWithGit.md = Exercices\WorkingWithGit.md
 	EndProjectSection
 EndProject

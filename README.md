@@ -16,7 +16,7 @@ Les sujets :
 5. [Travailler avec git](Exercices/WorkingWithGit.md) 
 6. [Cherry-pick](Exercices/CherryPick.md) 
 7. [Stash](Exercices/Stash.md) 
-8. [Merge](Exercices/merge.md) 
+8. [Merge](Exercices/Merge.md) 
 9. [Rebase](Exercices/Rebase.md) 
 10. [Merge ou rebase?](Exercices/MergeOrRebase.md) 
 11. Something Went Wrong

@@ -20,6 +20,7 @@ Les sujets :
 9. [Rebase](Exercices/Rebase.md) 
 10. [Merge ou rebase?](Exercices/MergeOrRebase.md) 
 11. Something Went Wrong
+12. Bonnes pratiques (Naming des branches, cleaning local et distant régulier, commit régulier et , no-ff par défaut)
 
 
 Un aide-mémoire est [disponible ici](Exercices/CheatSheet.md)

@@ -13,19 +13,23 @@ Et l'historique existant avec un `git log`.
 ## Changements dans les fichiers : 
 
 Ouvrir le fichier Program.cs avec un éditeur, et supprimer les lignes suivantes : 
-`using System;
+`
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Threading.Tasks;`
+using System.Threading.Tasks;
+`
 
 Sauvegarder et fermer le fichier. 
 
 Ouvrir le fichier Startup.cs avec un éditeur, et ajouter la ligne suivante : 
 
-`__services.AddMemoryCache();__
+`
+__services.AddMemoryCache();__
 
-services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);`
+services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+`
 
 Sauvegarder et fermer le fichier. 
 
@@ -64,7 +68,7 @@ Pusher les fichiers sur l'origin.
 
 ## Retour au master
 
-__ La partie se déroulant sur github n'est pas développée ici. __
+__La partie se déroulant sur github n'est pas développée ici.__
 Atteindre la page https://github.com/YOURUSERNAME/git-training/branches.
 Cliquer sur le bouton "New Pull request" à coté du nom de la branch récemment pushée, puis "Create Pull Request"
 Enfin Merger la pull request depuis l'onglet "Conversation".

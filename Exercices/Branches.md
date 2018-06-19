@@ -2,7 +2,7 @@
 
 *durée: 10 / 15 min*
 
-La branche actuelle est `master`. Pour créer une branch basée sur master, taper `git branch another-branch-from-master`
+La branche actuelle est `master`. Pour créer une branch basée sur master, taper `git branch branch-from-master`
 
 La branche est alors créée, mais on peut constater que git bash indique toujours `/c/Projects/git-training (master)`. 
 Il faut atteindre cette nouvelle branche avec `git checkout branch-from-master`. 
@@ -26,7 +26,7 @@ Avec la commande `git push origin --delete another-branch-from-master` on efface
 
 Lister à nouveau les branches locales et distantes.
 
-Faire un checkout de la branche `another-branch-from-master`.
+Faire un checkout de la branche `branch-from-master`.
 Revenir à la branche précédente avec `git checkout - ` 
 Ou avec un alias: `git co -`
 

@@ -35,7 +35,7 @@ Double-cliquer sur le hash du commit "Modif Config.cs" (en gras dans l'exemple p
 
 Retourner sur la branche master et afficher l'historique avec un `git log`. 
 
-Jouer la commande `git cherry-pick __433411e842d6c46658982b74625b1ff5f64e7da2__`
+Jouer la commande `git cherry-pick __433411e842d6c46658982b74625b1ff5f64e7da2__ `
 
 Regarder à nouveau l'historique du master.
 
@@ -51,37 +51,37 @@ Commiter ce changement avec le message "Modif Settings.cs for conflict".
 
 Cherry-picker le commit "Modif Settings.cs" depuis la branche 'cherry-pick-me'
 
-Un message similaire ç celui-ci apparait : 
+Un message similaire à celui-ci apparait : 
 
-`$ git cherry-pick 33db9aed04b88e26f464ad06e47ef97d495f1964
-error: could not apply 33db9ae... temp
-hint: after resolving the conflicts, mark the corrected paths
-hint: with 'git add <paths>' or 'git rm <paths>'
-hint: and commit the result with 'git commit'`
+`$ git cherry-pick 33db9aed04b88e26f464ad06e47ef97d495f1964`
+`error: could not apply 33db9ae... temp`
+`hint: after resolving the conflicts, mark the corrected paths`
+`hint: with 'git add <paths>' or 'git rm <paths>'`
+`hint: and commit the result with 'git commit'`
 
 Les modifications sont en conflit, car le même fichier est modifié par 2 commits incompatibles. Afficher le statut nous donne plus d'informations : 
 
-`On branch cherry-pick-issue
-You are currently cherry-picking commit 33db9ae.
-  (fix conflicts and run "git cherry-pick --continue")
-  (use "git cherry-pick --abort" to cancel the cherry-pick operation)
+`On branch cherry-pick-issue`
+`You are currently cherry-picking commit 33db9ae.`
+`(fix conflicts and run "git cherry-pick --continue")`
+`(use "git cherry-pick --abort" to cancel the cherry-pick operation)`
 
-Unmerged paths:
-  (use "git add <file>..." to mark resolution)
+`Unmerged paths:`
+`(use "git add <file>..." to mark resolution)`
 
-        both modified:   Training.Git/Settings.cs
+`both modified:   Training.Git/Settings.cs`
 
-no changes added to commit (use "git add" and/or "git commit -a")`
+`no changes added to commit (use "git add" and/or "git commit -a")`
 
 Pour résoudre le conflit, plusieurs façons sont possibles. Nous le ferons à la main dans le cadre de cet exercice. 
 
 Ouvrir le fichier Settings.cs. Les lignes conflictuelles sont marquées par des chevrons : <<<<<<< et >>>>>>>>
 
-`<<<<<<< HEAD
-/// settings 2
-=======
-/// settings 1
->>>>>>> 33db9ae... cherry-pick-me`
+`<<<<<<< HEAD`
+`/// settings 2`
+`=======`
+`/// settings 1`
+`>>>>>>> 33db9ae... cherry-pick-me`
 
 Dans le cadre de cet exercice nous allons conserver les 2 modifications. Editer le fichier pour supprimer les lignes suivantes : 
 `<<<<<<< HEAD`

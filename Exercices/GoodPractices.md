@@ -35,7 +35,7 @@ Il est vivement recommandé de bloquer cette possibilité directement dans les s
 
 - useful commit messages
 Même si l'on a tendance à moins les développer lorsque l'on travaille sur sa story, essayer autant que possible d'avoir des messages de commits qui permettent de s'y retrouver.
-[XKCD](https://imgs.xkcd.com/comics/git_commit.png)
+![XKCD](https://imgs.xkcd.com/comics/git_commit.png)
 
 - ne pas commiter les fichiers de configuration
 Sinon les mots de passes sont visibles à toute personne qui a accès au repo. 

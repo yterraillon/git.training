@@ -13,23 +13,23 @@ Et l'historique existant avec un `git log`.
 ## Changements dans les fichiers : 
 
 Ouvrir le fichier Program.cs avec un éditeur, et supprimer les lignes suivantes : 
-`
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
-`
+
+`using System;`
+`using System.Collections.Generic;`
+`using System.IO;`
+`using System.Linq;`
+`using System.Threading.Tasks;`
+
 
 Sauvegarder et fermer le fichier. 
 
 Ouvrir le fichier Startup.cs avec un éditeur, et ajouter la ligne suivante : 
 
 `
-__services.AddMemoryCache();__
+__services.AddMemoryCache();__`
 
-services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-`
+`services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);`
+
 
 Sauvegarder et fermer le fichier. 
 

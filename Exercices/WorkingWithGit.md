@@ -25,8 +25,7 @@ Sauvegarder et fermer le fichier.
 
 Ouvrir le fichier Startup.cs avec un éditeur, et ajouter la ligne suivante : 
 
-`
-__services.AddMemoryCache();__`
+`services.AddMemoryCache();`
 
 `services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);`
 

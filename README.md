@@ -5,6 +5,8 @@ Another git training. Feel free to fork and play with it!
 
 Formation git en plusieurs exercices pratiques. 
 
+[XKCD](https://imgs.xkcd.com/comics/git.png)
+
 Avant de démarrer, assurez-vous d'avoir les [prérequis](Exercices/GetReadyForTheTraining.md). A noter, cette formation n'a pas vocation à traiter ce qui se passe coté serveur (dans notre cas github.com). 
 Cela fera l'objet d'un complément ultérieur. 
 
@@ -19,8 +21,8 @@ Les sujets :
 8. [Merge](Exercices/Merge.md) 
 9. [Rebase](Exercices/Rebase.md) 
 10. [Merge ou rebase?](Exercices/MergeOrRebase.md) 
-11. Something Went Wrong
-12. Bonnes pratiques 
+11. [Something Went Wrong](Exercices/Fixes.md) 
+12. [Bonnes pratiques](Exercices/GoodPractices.md)
 
 
 Un aide-mémoire est [disponible ici](Exercices/CheatSheet.md)

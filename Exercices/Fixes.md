@@ -4,7 +4,7 @@
 
 ## Revert
 
-Crée un commit qui est l'exact inverse du précédent.
+Crée un commit qui est l'exact inverse de celui précisé en paramètre.
 
 ### En pratique : 
 
@@ -13,18 +13,14 @@ Créer une branche 'fixes' depuis le master et l'atteindre.
 Modifier le fichier Error.html en y ajoutant la ligne 
 `<!--Error-->`
 
-Ajouter un nouveau fichier nommé "Exception.cs"
-
-Commiter ce changement avec le message "Error". Vérifier que le fichier Exception.cs est bien inclus dans le commit. 
+Commiter ce changement avec le message "Error".
 
 Pusher. 
 
-Faire un revert du dernier commit `git revert`
+Faire un revert du dernier commit `git revert COMMITHASH`
 
 Observer le résultat dans l'historique. 
-Pusher et observer les fichiers modifiés sur git. 
-
-A noter : le commit est créé directement, il ne requiert aucune action supplémentaire. 
+Pusher et observer les fichiers modifiés sur git.  
 
 ## Reset 
 
@@ -46,7 +42,11 @@ Supprime les fichiers et répertoires non traqués.
 
 ### En pratique :
 
-Depuis la branche 'fixes' supprimer les fichiers modifiés avec un `git clean -df`
+Depuis la branche 'fixes' Ajouter un nouveau fichier nommé "Exception.cs"
+
+Observer le statut des fichiers.
+
+Supprimer le fichier avec un `git clean -df`
 Observer le statut des fichiers, et le log. 
 
 Vérifier que le fichier Exception.cs n'est plus présent.

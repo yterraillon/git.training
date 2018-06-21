@@ -12,17 +12,16 @@ Cela fera l'objet d'un complément ultérieur.
 
 Les sujets : 
 1. [Configuration de git](Exercices/Configuration.md)
-2. Un peu de vocabulaire
-3. [Récupération du projet](Exercices/CloneProject.md)
-4. [Navigation entre les branches](Exercices/Branches.md) 
-5. [Travailler avec git](Exercices/WorkingWithGit.md) 
-6. [Cherry-pick](Exercices/CherryPick.md) 
-7. [Stash](Exercices/Stash.md) 
-8. [Merge](Exercices/Merge.md) 
-9. [Rebase](Exercices/Rebase.md) 
-10. [Merge ou rebase?](Exercices/MergeOrRebase.md) 
-11. [Something Went Wrong](Exercices/Fixes.md) 
-12. [Bonnes pratiques](Exercices/GoodPractices.md)
+2. [Récupération du projet](Exercices/CloneProject.md)
+3. [Navigation entre les branches](Exercices/Branches.md) 
+4. [Travailler avec git](Exercices/WorkingWithGit.md) 
+5. [Cherry-pick](Exercices/CherryPick.md) 
+6. [Stash](Exercices/Stash.md) 
+7. [Merge](Exercices/Merge.md) 
+8. [Rebase](Exercices/Rebase.md) 
+9. [Merge ou rebase?](Exercices/MergeOrRebase.md) 
+10. [Something Went Wrong](Exercices/Fixes.md) 
+11. [Bonnes pratiques](Exercices/GoodPractices.md)
 
 
 Un aide-mémoire est [disponible ici](Exercices/CheatSheet.md)

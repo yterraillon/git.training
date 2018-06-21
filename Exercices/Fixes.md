@@ -66,6 +66,14 @@ Supprimer les changements qui ont été induits par le reset.
 
 Observer le statut des fichiers, et le log. 
 
+## Amend
+
+Change le dernier message de commit
+
+### en pratique : 
+
+Taper `git commit --amend` puis changer le message de commit. A noter : si le commit a déja été pushé, cela change l'historique, et implique donc un push force
+
 ## Blame
 
 Permet de savoir qui a modifié quelle ligne dans un fichier.
@@ -73,3 +81,14 @@ Permet de savoir qui a modifié quelle ligne dans un fichier.
 ### En pratique : 
 
 Faire un `git blame Startup.cs` et observer le résultat. 
+
+
+## Problèmes rencontrés fréquemment : 
+
+Mon git est dans un état bizarre  : 
+- Checker avec un git status 
+- Regarder dans la ligne de commande si on est pas dans un état de merge ou de rebase (auquel cas : git rebase --abort ou git merge --abort)
+
+Les tags de validation de SL :
+- Pb de validation/ push d'un commit cherry pické 
+- Reset de la branche et recommit pour mettre un tag correct

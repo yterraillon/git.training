@@ -76,7 +76,7 @@ Git config:
 
 ## Fix
 
-- créer un commit qui est l'exact inverse du précédent : `git revert`
+- créer un commit qui est l'exact inverse du précédent : `git revert COMMITHASH`
 - supprimer le dernier commit (mets les changements dudit commit comme non commités): git reset HEAD~1
 - changer le message du dernier commit: `git commit --amend`
 - annuler les changements du fichier FILENAME: `git checkout -- FILENAME`

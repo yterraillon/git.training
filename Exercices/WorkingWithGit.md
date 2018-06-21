@@ -74,5 +74,7 @@ Enfin Merger la pull request depuis l'onglet "Conversation".
 
 Retourner sur Git bash, et atteindre le master. 
 Faire un `git fetch`, puis un `git status`. Pour le moment nous n'avons pas récupéré les changements distants.
+A note : le 'git fetch' récupère notamment les nouvelles branches créées sur l'origin mais elles n'apparaitront pas avec un git branch. Par contre il est possible de les checkout-er. 
 
 On va le faire en faisant un `git pull`. Puis faire un `git log` pour observer les changements. 
+A noter : un 'git pull' est la combinaison de 2 commandes : 'git fetch', suivi de 'git merge origin'

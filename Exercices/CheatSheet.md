@@ -37,6 +37,7 @@ Git config:
 - lister les branches distantes (sur origin): `git branch -r`
 - lister toutes les branches: `git branch -a`
 - effacer une branche: `git branch -D BRANCHNAME`
+- effacer une branche distante : `git push origin --delete BRANCHNAME`
 - revenir à la branche précédente: `git checkout - ` ou avec un alias: `git co -`
 
 

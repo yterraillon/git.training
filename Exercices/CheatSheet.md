@@ -29,7 +29,6 @@ Git config:
 - définir l'origin d'un répertoire local nouvellement créé : `git remote add origin REPOSITORYURL` (le répertoire ne doit pas être déjà présent sur git)
 - cloner un répertoire distant sur le local : `git clone REPOSITORYURL`
 
-
 ## Branch Management
 
 - créer une branche BRANCHNAME: `git branch BRANCHNAME`
@@ -41,19 +40,19 @@ Git config:
 - lister toutes les branches: `git branch -a`
 - effacer une branche: `git branch -D BRANCHNAME`
 - effacer une branche distante : `git push origin --delete BRANCHNAME`
-- revenir à la branche précédente: `git checkout -` ou avec un alias: `git co -`
-
+- revenir ? la branche précédente: `git checkout -` ou avec un alias: `git co -`
 
 ## Working
 
 - voir l'état des fichiers : `git status` ou avec un alias `git st`
-- ajouter un nouveau fichier à l'index git `git add FILENAME`
-- ajouter tous les nouveaux fichiers à l'index git `git add .`
+- ajouter un nouveau fichier ? l'index git `git add FILENAME`
+- ajouter tous les nouveaux fichiers ? l'index git `git add .`
 - commiter un fichiers modifié : `git commit FILENAME`
 - commiter tous les fichiers modifiés et spécifier un message de commit COMMITMESSAGE `git commit -am "COMMITMESSAGE"`
 - afficher l'historique des commits locaux : `git log`
+- afficher l'historique des commits distants : `git log origin/BRANCHNAME`
 - afficher le dernier commit (alias) : `git last`
-- envoyer les changements à l'origin : `git push`
+- envoyer les changements ? l'origin : `git push`
 - récupérer les derniers changements de l'origin `git pull`
  
 
@@ -66,7 +65,6 @@ Git config:
 - voir la liste des changements mis de coté `git stash list`
 - supprimer le dernier stash `git stash drop`
 
-
 ## Merge and Rebase
 
 - merger la branch BRANCHNAME dans la branche actuelle : `git merge BRANCHNAME`
@@ -75,8 +73,7 @@ Git config:
 - remplacer l'historique des commits de la branche par ceux de la branche BRANCHNAME : `git rebase BRANCHNAME`
 - remplacer l'historique des commits de la branche par ceux de la branche BRANCHNAME de façon interactive : `git rebase -i BRANCHNAME`
 
-- forcer le push (pas recommandé, mais à utiliser si l'historique local et celui d'origin sont différents) : `git push --force`
-
+- forcer le push (pas recommandé, mais ? utiliser si l'historique local et celui d'origin sont différents) : `git push --force`
 
 ## Fix
 
@@ -85,5 +82,5 @@ Git config:
 - changer le message du dernier commit: `git commit --amend`
 - annuler les changements du fichier FILENAME: `git checkout -- FILENAME`
 - annuler les changements de tous les fichiers: `git checkout -- .`
-- supprimer les fichiers et dossiers non ajoutés à l'index de git `git clean -df`
+- supprimer les fichiers et dossiers non ajoutés ? l'index de git `git clean -df`
 - trouver qui doit être blamé pour la modif sur un fichier : `git blame FILENAME`

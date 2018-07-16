@@ -64,6 +64,8 @@ Il est aussi possible, et plus pratique, d'ajouter les fichiers par lot avec un 
 Maintenant que les fichiers sont ajoutés, on peut les commiter.
 Faire un `git status` et noter qu'il est précisé que le local est "1 commit ahead of origin".
 
+Regarder le log de l'origin avec `git log origin/master` et le comparer avec le log local
+
 Pusher les fichiers sur l'origin.
 
 ## Retour au master

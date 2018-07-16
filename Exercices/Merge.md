@@ -2,6 +2,8 @@
 
 ## durée: 15 min
 
+Documentation : <https://git-scm.com/docs/git-merge>
+
 ## Définition
 
 Un merge fusionne deux historiques ensemble.
@@ -39,7 +41,6 @@ Appuyer sur Ctrl+c (pour accéder ? la commande), puis taper 'wq' (write and quit
 
 Le merge crée un point de commit qui sera le dernier de l'historique. A observer dans le log.
 
-
 ## Fast Forward
 
 Depuis le master, créer une nouvelle branche 'fast-forward' et l'atteindre.
@@ -54,14 +55,21 @@ Cette fois-ci, on va merger la branche a-merger en précisant qu'on ne fait pas d
 
 Git va cette fois créer un nouveau commit.
 
-## En quelques mots
+### En quelques mots
 
-Lors d'un merge d'une branche A dans une branche B, Git va comparer les historiques. S'il est possible d'appliquer les commits de B directement sur l'historique de A 
+Lors d'un merge d'une branche A dans une branche B, Git va comparer les historiques. S'il est possible d'appliquer les commits de B directement sur l'historique de A
 (ce qui signifie que ce sont les mêmes historiques) alors Git va faire un Fast-Forward et appliquer les commits directement. La commande --no-ff (ou la config `merge.ff false`)
 bloque ce comportement, et force la création d'un commit de merge.
 
+### Exemples pratiques
 
-## Exemples pratiques
+Lors d'un merge d'une branche A dans master, on va préférer bloquer le fast-forward pour avoir un point de commit marquant ce merge.
+Lors d'un merge du master dans une branche A, on peut préférer autoriser le fast forward, car le merge depuis le master n'a pas d'importance dans l'historique de travail.
 
-Lors d'un merge d'une branche A dans master, on va préférer bloquer le fast-forward pour avoir un point de commit marquant ce merge. 
-Lors d'un merge du master dans une branche A, on peut préférer autoriser le fast forward, car le merge depuis le master n'a pas d'importance dans l'historique de travail. 
+## Squash
+
+Il est possible lors d'un merge de squasher tous les commits de la branche source en un seul, notamment pour clarifier l'historique.
+
+Créer une nouvelle branche 'squash-me' depuis cible-merge, et y faire 2 commits distincts.
+
+Retourner sur 'cible-merge' et jouer la commande `git merge --squash squash-me`. Préciser le message de commit et observer le résultat avec un git log

@@ -17,7 +17,7 @@ Commiter ce changement avec le message "Error".
 
 Pusher.
 
-Faire un revert du dernier commit `git revert COMMITHASH`
+Faire un revert du dernier commit (remplacer COMMITHASH par le hash du commit à reverter) `git revert COMMITHASH`
 
 Observer le résultat dans l'historique.
 Pusher et observer les fichiers modifiés sur git.  

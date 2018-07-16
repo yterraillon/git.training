@@ -1,6 +1,7 @@
 # Résumé des commandes Git
 
-### Catégories
+## Catégories
+
 - **[Setup](#Setup)**
 - **[Repository](#Repository)**
 - **[Branch Management](#branch-Management)**
@@ -12,12 +13,14 @@
 ## Setup
 
 Définir les alias:
+
 - status (st) : `git config --global alias.st status`
 - checkout (co) : `git config --global alias.co checkout`
 - commit (ci) : `git config --global alias.ci commit`
 - see last commit (last) : `git config --global alias.last 'log -1 HEAD'`
 
 Git config:
+
 - `git config --list`
 
 ## Repository
@@ -38,7 +41,7 @@ Git config:
 - lister toutes les branches: `git branch -a`
 - effacer une branche: `git branch -D BRANCHNAME`
 - effacer une branche distante : `git push origin --delete BRANCHNAME`
-- revenir à la branche précédente: `git checkout - ` ou avec un alias: `git co -`
+- revenir à la branche précédente: `git checkout -` ou avec un alias: `git co -`
 
 
 ## Working

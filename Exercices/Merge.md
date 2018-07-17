@@ -72,4 +72,4 @@ Il est possible lors d'un merge de squasher tous les commits de la branche sourc
 
 Créer une nouvelle branche 'squash-me' depuis cible-merge, et y faire 2 commits distincts.
 
-Retourner sur 'cible-merge' et jouer la commande `git merge --squash squash-me`. Préciser le message de commit et observer le résultat avec un git log
+Retourner sur 'cible-merge' et jouer la commande `git merge --squash squash-me`, puis `git commit` Préciser le message de commit et observer le résultat avec un git log

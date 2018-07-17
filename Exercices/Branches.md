@@ -1,6 +1,6 @@
 # Jouons avec les Branches
 
-## durée: 10 / 15 min*
+## durée: 10 / 15 min
 
 La branche actuelle est `master`. Pour créer une branch basée sur master, taper `git branch branch-from-master`
 
@@ -27,7 +27,7 @@ Avec la commande `git push origin --delete another-branch-from-master` on efface
 Lister ? nouveau les branches locales et distantes.
 
 Faire un checkout de la branche `branch-from-master`.
-Revenir ? la branche prÃ©cÃ©dente avec `git checkout -`
+Revenir ? la branche précédente avec `git checkout -`
 Ou avec un alias: `git co -`
 
 Rejouer cette commande.

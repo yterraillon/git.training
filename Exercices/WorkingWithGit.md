@@ -35,7 +35,7 @@ Observer les changements avec un `git status`, et l'historique avec un `git log`
 
 Les fichiers sont modifiés, mais non commités encore. On va corriger cela en faisant un `git commit -am "Mon premier commit"`
 
--a indique que l'on commite tous les fichiers
+-a // TODO 
 -m "mon message" indique le message de commit
 
 -am est la concaténation des 2 commandes.

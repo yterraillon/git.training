@@ -13,6 +13,8 @@ Pour creuser un peu le log : <https://www.atlassian.com/git/tutorials/git-log>)
 
 ## Changements dans les fichiers
 
+### Modifications
+
 Ouvrir le fichier Program.cs avec un éditeur, et supprimer les lignes suivantes :
 
 `using System;`
@@ -31,7 +33,12 @@ Juste avant : `services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Ve
 
 Sauvegarder et fermer le fichier.
 
+### Status, log et diff
+
 Observer les changements avec un `git status`, et l'historique avec un `git log`.
+
+Pour voir ce qui a été fait, et qui va être commité, on va faire un `git diff` (pour voir l'intégralité des changements) ou un `git diff FILENAME` pour voir les changements sur un fichier spécifique.
+A noter : ce n'est pas la solution la plus esthétique.
 
 Les fichiers sont modifiés, mais non commités encore. On va corriger cela en faisant un `git commit -am "Mon premier commit"`
 
@@ -57,7 +64,7 @@ Observer les changements avec un `git status`, et l'historique avec un `git log`
 Commiter les fichiers et observer le statut avec un `git status`. Les fichiers ajoutés ne sont pas encore inclus dans l'index git!
 On va donc devoir les y ajouter. Faire un `git add Training.Git/Config.cs`et observer les changements avec un `git status`.
 
-Il est aussi possible, et plus pratique, d'ajouter les fichiers par lot avec un `git add .`
+Il est aussi possible, et plus pratique, d'ajouter les fichiers par lot avec un `git add .`. Le git add ajoute les fichiers à l'index git et les stage pour commit dans la foulée.
 
 Maintenant que les fichiers sont ajoutés, on peut les commiter.
 Faire un `git status` et noter qu'il est précisé que le local est "1 commit ahead of origin".
@@ -65,6 +72,10 @@ Faire un `git status` et noter qu'il est précisé que le local est "1 commit ahea
 Regarder le log de l'origin avec `git log origin/master` et le comparer avec le log local
 
 Pusher les fichiers sur l'origin.
+
+### Comprendre le cycle de vie des fichiers
+
+![Lifecyle](https://git-scm.com/figures/18333fig0201-tn.png)
 
 ## Retour au master
 
@@ -74,8 +85,10 @@ Cliquer sur le bouton "New Pull request" ? coté du nom de la branch récemment pu
 Enfin Merger la pull request depuis l'onglet "Conversation".
 
 Retourner sur Git bash, et atteindre le master.
-Faire un `git fetch`, puis un `git status`. Pour le moment nous n'avons pas récupéré les changements distants.
-A note : le 'git fetch' récupère notamment les nouvelles branches créées sur l'origin mais elles n'apparaitront pas avec un git branch. Par contre il est possible de les checkout-er.
 
-On va le faire en faisant un `git pull`. Puis faire un `git log` pour observer les changements.
+Faire un `git pull`. Puis faire un `git log` pour observer les changements.
 A noter : un 'git pull' est la combinaison de 2 commandes : 'git fetch', suivi de 'git merge origin'
+
+Retourner sur <https://github.com/YOURUSERNAME/git-training> et créer une branche.  
+Depuis git bash, faire un `git fetch` pour voir apparaitre la nouvelle branche.
+A noter : le 'git fetch' récupère les nouvelles branches créées sur l'origin mais elles n'apparaitront pas avec un git branch. Par contre il est possible de les checkout-er.

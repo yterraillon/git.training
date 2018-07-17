@@ -24,7 +24,7 @@ Pusher et observer les fichiers modifiés sur git.
 
 ## Reset
 
-supprimer le(s) dernier(s) commit(s) (mets les changements dudit commit comme non commités)
+supprimer le(s) dernier(s) commit(s) (mets les changements dudit commit comme non commités et en non prêts (stagés) pour le commit)
 `git reset HEAD~1` où 1 est le nombre de commits depuis le dernier à supprimer.
 
 ### Reset -En pratique

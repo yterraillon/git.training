@@ -39,7 +39,6 @@ Jouer la commande `git cherry-pick 433411e842d6c46658982b74625b1ff5f64e7da2`
 
 Regarder à nouveau l'historique du master.
 
-
 ## En cas de conflit
 
 Depuis master créer et atteindre une branche 'cherry-pick-issue'
@@ -96,3 +95,7 @@ Une fois les conflits marqués comme résolus, on va continuer le cherry-pick (qui
 `git cherry-pick --continue`
 
 A noter que l'on peut aussi arrêter l'opération et revenir à l'état d'avant d'avoir démarré le cherry-pick en faisant un `git cherry-pick --abort`
+
+## Le HEAD
+
+Le HEAD désigne le point de commit le plus avancé de la branche courante. Il change en même temps que l'on change de branche. 

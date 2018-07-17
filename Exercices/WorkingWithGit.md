@@ -1,6 +1,6 @@
 # Working with Git
 
-## durée: 15 / 20 min
+## durée: 20 / 30 min
 
 Créer une branche "work", et l'atteindre.
 
@@ -11,7 +11,6 @@ Et l'historique existant avec un `git log`.
 Documentation : <https://git-scm.com/docs/git-log>
 Pour creuser un peu le log : <https://www.atlassian.com/git/tutorials/git-log>)
 
-
 ## Changements dans les fichiers
 
 Ouvrir le fichier Program.cs avec un éditeur, et supprimer les lignes suivantes :
@@ -21,7 +20,6 @@ Ouvrir le fichier Program.cs avec un éditeur, et supprimer les lignes suivantes 
 `using System.IO;`
 `using System.Linq;`
 `using System.Threading.Tasks;`
-
 
 Sauvegarder et fermer le fichier.
 

@@ -54,7 +54,6 @@ Git config:
 - afficher le dernier commit (alias) : `git last`
 - envoyer les changements ? l'origin : `git push`
 - récupérer les derniers changements de l'origin `git pull`
- 
 
 ## Advanced
 
@@ -78,9 +77,9 @@ Git config:
 ## Fix
 
 - créer un commit qui est l'exact inverse du précédent : `git revert COMMITHASH`
-- supprimer le dernier commit (mets les changements dudit commit comme non commités): git reset HEAD~1
+- supprimer le dernier commit (mets les changements dudit commit comme non commités): `git reset HEAD~1`
 - changer le message du dernier commit: `git commit --amend`
 - annuler les changements du fichier FILENAME: `git checkout -- FILENAME`
 - annuler les changements de tous les fichiers: `git checkout -- .`
 - supprimer les fichiers et dossiers non ajoutés ? l'index de git `git clean -df`
-- trouver qui doit être blamé pour la modif sur un fichier : `git blame FILENAME`
+- trouver qui doit ?tre blamé pour la modif sur un fichier : `git blame FILENAME`

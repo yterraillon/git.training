@@ -38,7 +38,8 @@ Sauvegarder et fermer le fichier.
 Observer les changements avec un `git status`, et l'historique avec un `git log`.
 
 Pour voir ce qui a été fait, et qui va être commité, on va faire un `git diff` (pour voir l'intégralité des changements) ou un `git diff FILENAME` pour voir les changements sur un fichier spécifique.
-A noter : ce n'est pas la solution la plus esthétique.
+IMPORTANT : cela ne marchera pas si les fichiers ont déjà été ajoutés ou commités. Il faut donc le faire avant d'engager quoi que ce soit. 
+A noter : ce n'est pas la solution la plus esthétique. En général on préfèrera utiliser un logiciel avec une interface qui présente cela de façon plus esthétique.
 
 Les fichiers sont modifiés, mais non commités encore. On va corriger cela en faisant un `git commit -am "Mon premier commit"`
 

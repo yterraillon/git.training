@@ -35,7 +35,7 @@ Observer les changements avec un `git status`, et l'historique avec un `git log`
 
 Les fichiers sont modifiés, mais non commités encore. On va corriger cela en faisant un `git commit -am "Mon premier commit"`
 
--a // TODO 
+-a marque tous les fichiers qui ont été modifiés ou effacés en prêt à être commité (staged for commit) SAUF ceux qui ne sont pas dans l'index de git (qu'il faut ajouter avec un git add)
 -m "mon message" indique le message de commit
 
 -am est la concaténation des 2 commandes.

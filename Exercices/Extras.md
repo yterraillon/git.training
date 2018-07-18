@@ -27,3 +27,11 @@ B
 A
 
 Si l'on fait un pull, on va créer un point de commit dans l'historique à cause du merge, ce qui n'est pas désiré. A la place on va faire un `git pull --rebase`, pour arriver à :
+
+Dw
+|
+Cpr
+|
+B
+|
+A

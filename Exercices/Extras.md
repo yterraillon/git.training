@@ -39,27 +39,13 @@ Comme il s'agit d'un merge, cela signifie que dans le cas où il y a une différ
 Exemple :
 Origin (après qu'une pull request a été effectuée et mergée)
 
-Cpr
-|
-B
-|
-A
+A -- B -- Cpr
 
 Local (après un commit de travail)
-Dw
-|
-B
-|
-A
+A -- B -- Dw
 
 Si l'on fait un pull, on va créer un point de commit dans l'historique à cause du merge, ce qui n'est pas désiré. A la place on va faire un `git pull --rebase`, pour arriver à :
 
-Dw
-|
-Cpr
-|
-B
-|
-A
+A -- B -- Cpr -- Dw
 
 A noter : cela peut être fait automatiquement via la config de git : pull.rebase=true

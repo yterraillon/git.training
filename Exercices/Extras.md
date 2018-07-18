@@ -35,3 +35,5 @@ Cpr
 B
 |
 A
+
+A noter : cela peut être fait automatiquement via la config de git : pull.rebase=true

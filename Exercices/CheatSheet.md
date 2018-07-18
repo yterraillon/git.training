@@ -40,7 +40,7 @@ Git config:
 - lister toutes les branches: `git branch -a`
 - effacer une branche: `git branch -D BRANCHNAME`
 - effacer une branche distante : `git push origin --delete BRANCHNAME`
-- revenir ? la branche précédente: `git checkout -` ou avec un alias: `git co -`
+- revenir à la branche précédente: `git checkout -` ou avec un alias: `git co -`
 
 ## Working
 
@@ -52,7 +52,7 @@ Git config:
 - afficher l'historique des commits locaux : `git log`
 - afficher l'historique des commits distants : `git log origin/BRANCHNAME`
 - afficher le dernier commit (alias) : `git last`
-- envoyer les changements ? l'origin : `git push`
+- envoyer les changements à l'origin : `git push`
 - récupérer les derniers changements de l'origin `git pull`
 
 ## Advanced
@@ -72,7 +72,7 @@ Git config:
 - remplacer l'historique des commits de la branche par ceux de la branche BRANCHNAME : `git rebase BRANCHNAME`
 - remplacer l'historique des commits de la branche par ceux de la branche BRANCHNAME de façon interactive : `git rebase -i BRANCHNAME`
 
-- forcer le push (pas recommandé, mais ? utiliser si l'historique local et celui d'origin sont différents) : `git push --force`
+- forcer le push (pas recommandé, mais à utiliser si l'historique local et celui d'origin sont différents) : `git push --force`
 
 ## Fix
 
@@ -81,5 +81,5 @@ Git config:
 - changer le message du dernier commit: `git commit --amend`
 - annuler les changements du fichier FILENAME: `git checkout -- FILENAME`
 - annuler les changements de tous les fichiers: `git checkout -- .`
-- supprimer les fichiers et dossiers non ajoutés ? l'index de git `git clean -df`
+- supprimer les fichiers et dossiers non ajoutés à l'index de git `git clean -df`
 - trouver qui doit ?tre blamé pour la modif sur un fichier : `git blame FILENAME`

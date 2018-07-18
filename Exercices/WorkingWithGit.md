@@ -88,7 +88,6 @@ Enfin Merger la pull request depuis l'onglet "Conversation".
 Retourner sur Git bash, et atteindre le master.
 
 Faire un `git pull`. Puis faire un `git log` pour observer les changements.
-A noter : un 'git pull' est la combinaison de 2 commandes : 'git fetch', suivi de 'git merge origin'
 
 Retourner sur <https://github.com/YOURUSERNAME/git-training> et créer une branche.  
 Depuis git bash, faire un `git fetch` pour voir apparaitre la nouvelle branche.

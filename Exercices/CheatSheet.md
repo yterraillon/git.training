@@ -1,6 +1,6 @@
-# Résumé des commandes Git
+# RÃ©sumÃ© des commandes Git
 
-## Catégories
+## CatÃ©gories
 
 - **[Setup](#Setup)**
 - **[Repository](#Repository)**
@@ -12,12 +12,13 @@
 
 ## Setup
 
-Définir les alias:
+DÃ©finir les alias:
 
 - status (st) : `git config --global alias.st status`
 - checkout (co) : `git config --global alias.co checkout`
 - commit (ci) : `git config --global alias.ci commit`
 - see last commit (last) : `git config --global alias.last 'log -1 HEAD'`
+- remove an alias : git config --global --unset alias.trololo
 
 Git config:
 
@@ -25,61 +26,61 @@ Git config:
 
 ## Repository
 
-- démarrer un répertoire git localement : `git init`
-- définir l'origin d'un répertoire local nouvellement créé : `git remote add origin REPOSITORYURL` (le répertoire ne doit pas être déjà présent sur git)
-- cloner un répertoire distant sur le local : `git clone REPOSITORYURL`
+- dÃ©marrer un rÃ©pertoire git localement : `git init`
+- dÃ©finir l'origin d'un rÃ©pertoire local nouvellement crÃ©Ã© : `git remote add origin REPOSITORYURL` (le rÃ©pertoire ne doit pas Ãªtre dÃ©jÃ  prÃ©sent sur git)
+- cloner un rÃ©pertoire distant sur le local : `git clone REPOSITORYURL`
 
 ## Branch Management
 
-- créer une branche BRANCHNAME: `git branch BRANCHNAME`
-- changer la branche de travail pour que ça soit BRANCHNAME: `git checkout BRANCHNAME` ou avec un alias: `git co BRANCHNAME`
-- créer une branche BRANCHNAME et y accéder de suite: `git checkout -b BRANCHNAME` ou avec un alias : `git co -b BRANCHNAME`
-- récupérer les branches de l'origin: `git fetch`
+- crÃ©er une branche BRANCHNAME: `git branch BRANCHNAME`
+- changer la branche de travail pour que Ã§a soit BRANCHNAME: `git checkout BRANCHNAME` ou avec un alias: `git co BRANCHNAME`
+- crÃ©er une branche BRANCHNAME et y accÃ©der de suite: `git checkout -b BRANCHNAME` ou avec un alias : `git co -b BRANCHNAME`
+- rÃ©cupÃ©rer les branches de l'origin: `git fetch`
 - lister les branches locales: `git branch`
 - lister les branches distantes (sur origin): `git branch -r`
 - lister toutes les branches: `git branch -a`
 - effacer une branche: `git branch -D BRANCHNAME`
 - effacer une branche distante : `git push origin --delete BRANCHNAME`
-- revenir à la branche précédente: `git checkout -` ou avec un alias: `git co -`
+- revenir Ã  la branche prÃ©cÃ©dente: `git checkout -` ou avec un alias: `git co -`
 
 ## Working
 
-- voir l'état des fichiers : `git status` ou avec un alias `git st`
+- voir l'Ã©tat des fichiers : `git status` ou avec un alias `git st`
 - ajouter un nouveau fichier ? l'index git `git add FILENAME`
 - ajouter tous les nouveaux fichiers ? l'index git `git add .`
-- commiter un fichiers modifié : `git commit FILENAME`
-- commiter tous les fichiers modifiés et spécifier un message de commit COMMITMESSAGE `git commit -am "COMMITMESSAGE"`
+- commiter un fichiers modifiÃ© : `git commit FILENAME`
+- commiter tous les fichiers modifiÃ©s et spÃ©cifier un message de commit COMMITMESSAGE `git commit -am "COMMITMESSAGE"`
 - afficher l'historique des commits locaux : `git log`
 - afficher l'historique des commits distants : `git log origin/BRANCHNAME`
 - afficher le dernier commit (alias) : `git last`
-- envoyer les changements à l'origin : `git push`
-- récupérer les derniers changements de l'origin `git pull`
+- envoyer les changements Ã  l'origin : `git push`
+- rÃ©cupÃ©rer les derniers changements de l'origin `git pull`
 
 ## Advanced
 
-- récupérer un commit d'une autre branche par son hash COMMITHASH et en faire le dernier commit sur la branche courante : `git cherry-pick COMMITHASH`
+- rÃ©cupÃ©rer un commit d'une autre branche par son hash COMMITHASH et en faire le dernier commit sur la branche courante : `git cherry-pick COMMITHASH`
 
-- mettre de coté les changements actuels `git stash`
-- appliquer les changements mis de coté `git stash apply`
-- voir la liste des changements mis de coté `git stash list`
+- mettre de cotÃ© les changements actuels `git stash`
+- appliquer les changements mis de cotÃ© `git stash apply`
+- voir la liste des changements mis de cotÃ© `git stash list`
 - supprimer le dernier stash `git stash drop`
 
 ## Merge and Rebase
 
 - merger la branch BRANCHNAME dans la branche actuelle : `git merge BRANCHNAME`
-- merger la branch BRANCHNAME dans la branche actuelle et forcer la création du commit de merge `git merge --no-ff BRANCHNAME`
+- merger la branch BRANCHNAME dans la branche actuelle et forcer la crÃ©ation du commit de merge `git merge --no-ff BRANCHNAME`
 
 - remplacer l'historique des commits de la branche par ceux de la branche BRANCHNAME : `git rebase BRANCHNAME`
-- remplacer l'historique des commits de la branche par ceux de la branche BRANCHNAME de façon interactive : `git rebase -i BRANCHNAME`
+- remplacer l'historique des commits de la branche par ceux de la branche BRANCHNAME de faÃ§on interactive : `git rebase -i BRANCHNAME`
 
-- forcer le push (pas recommandé, mais à utiliser si l'historique local et celui d'origin sont différents) : `git push --force`
+- forcer le push (pas recommandÃ©, mais Ã  utiliser si l'historique local et celui d'origin sont diffÃ©rents) : `git push --force`
 
 ## Fix
 
-- créer un commit qui est l'exact inverse du précédent : `git revert COMMITHASH`
-- supprimer le dernier commit (mets les changements dudit commit comme non commités): `git reset HEAD~1`
+- crÃ©er un commit qui est l'exact inverse du prÃ©cÃ©dent : `git revert COMMITHASH`
+- supprimer le dernier commit (mets les changements dudit commit comme non commitÃ©s): `git reset HEAD~1`
 - changer le message du dernier commit: `git commit --amend`
 - annuler les changements du fichier FILENAME: `git checkout -- FILENAME`
 - annuler les changements de tous les fichiers: `git checkout -- .`
-- supprimer les fichiers et dossiers non ajoutés à l'index de git `git clean -df`
-- trouver qui doit ?tre blamé pour la modif sur un fichier : `git blame FILENAME`
+- supprimer les fichiers et dossiers non ajoutÃ©s Ã  l'index de git `git clean -df`
+- trouver qui doit ?tre blamÃ© pour la modif sur un fichier : `git blame FILENAME`

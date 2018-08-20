@@ -1,20 +1,20 @@
-# git-training
+# Git Training
 
 Another git training. Feel free to fork and play with it!
 
-## Présentation
+## PrÃ©sentation
 
 Formation git en plusieurs exercices pratiques.
 
 ![XKCD](https://imgs.xkcd.com/comics/git.png)
 
-Avant de démarrer, assurez-vous d'avoir les [prérequis](Exercices/GetReadyForTheTraining.md). A noter, cette formation n'a pas vocation à traiter ce qui se passe coté serveur (dans notre cas github.com).
-Cela fera l'objet d'un complément ultérieur.
+Avant de dÃ©marrer, assurez-vous d'avoir les [prÃ©requis](Exercices/GetReadyForTheTraining.md). A noter, cette formation n'a pas vocation Ã  traiter ce qui se passe cotÃ© serveur (dans notre cas github.com).
+Cela fera l'objet d'un complÃ©ment ultÃ©rieur.
 
 Les sujets :
 
 1. [Configuration de git](Exercices/Configuration.md)
-2. [Récupération du projet](Exercices/CloneProject.md)
+2. [RÃ©cupÃ©ration du projet](Exercices/CloneProject.md)
 3. [Navigation entre les branches](Exercices/Branches.md)
 4. [Travailler avec git](Exercices/WorkingWithGit.md)
 5. [Cherry-pick](Exercices/CherryPick.md)
@@ -27,7 +27,7 @@ Les sujets :
 12. [Bonnes pratiques](Exercices/GoodPractices.md)
 
 
-Un aide-mémoire est [disponible ici](Exercices/CheatSheet.md)
+Un aide-mÃ©moire est [disponible ici](Exercices/CheatSheet.md)
 
 Vos meilleurs amis :
 
